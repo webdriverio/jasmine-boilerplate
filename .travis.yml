@@ -1,0 +1,10 @@
+dist: trusty
+language: node_js
+bundler_args: --retry 0
+
+node_js:
+- '6.10'
+
+addons:
+  jwt:
+    secure: kTz4S0NVFxaQ0nxc4Xel+9EYcGZPEnT4Ki4i976T3uRqWBqRWt1b1TmKvum8oAoCTdwnBYfPW1//LynzLgdDTvnV359StCojf2gbG4PX3LV7IrAIeK0Bk+z+MBUddpZfvQ7HB/BdlqPYb+hnu1ZHwKvC+I43dvXMMJNfcVqm1NQg1+qzglGopvZk+nd/Cmvyb8dh5xWciMnW6wEBZd4w0xu9PtBZEuitJ4FGYZWHOExN1DzY4+3fRlGkQfqAyct58qLFl7VMlXilTsZ64zLj28leCG4PcW6Me6cRs5tSnsyV27BKxgVBhFoX0E6siLL5YgHIDWEMAmS85n8XXMbYHrZDImy/cAn7BghdVV+JScZL+fYgGpMAxeN3rlN5UQApZTD5qr3MlBtQfDy0qABOpNiyFUp6BYBPzTBLDDzrn36FQpUOCNGETNBccQCDxdK8Az7TQ8kIRm37SAgjXsT/IT7B/pjMy2lKcsIJbjfjQNGxcx9WozHRqDBBPzG+z9mJyfdrCh+y6Xn2McQ0yHHhT4LwkSw75ogr+0Hz1mTWixIdw//wBHlUqEM8Omg+rbiTsAwt6ZKB1SW28U8O1mTg+7xZjv8mbzbCqTjpJr+KqFKZYNselmI985bvOJGgj7VarCo2isfi3swAPhpvlq6EDTEw9stCmbw+QaYf5OZGXOw=
