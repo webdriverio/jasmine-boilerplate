@@ -5,6 +5,9 @@ bundler_args: "--retry 0"
 node_js:
   - '6.10'
 
+env:
+  - SAUCE_USERNAME=webdriverio
+
 addons:
   jwt:
     - secure: aW/8NJCX/a1LSjHm5bKa1mHlsjZW3iA0DXaxAabuJzKpwgzEmsrj7ltnns7FhKg7iqTH4lv+ncSO0Q1BB7vYp7lwrh84u3TVorFA4YtW/ukp/D835+PnMs+/KWJCTvylG5mMVqo9AvAdPfkckmuVywHBbvy+ej10CBWsG1jLCSrPvQRMpSQP1/W+UL5VTVCkUgHajeDMYFrnqpCajLZKjo9d/G8u6QSDeRRw5lBWrCHudF9dRA+nZjlT6YuFmeup9uN80G1ddRhTBimyA2P15shrpWW9AA6SrA/BeNSwY703HaCbtejFsM1gYMc8+PfLGkTbW5zhyQrsNONbRG1HA4YvgistxDxUiAVbAzMxU5IKG42L4GWu3jvV4ncuPW7Xe+DlVNMsmx8QfEQDZUhk6xuFXbF2BIZLAWiaQMMBtVazTiAgp+LhJNR/9grsyZXWHPNOUbo/rk+ixg5MRWWCwtgV8Hu/02S2hKjOgKouWqib/7LAKZK8Q5zoWOBRAP76ME1sdSQhvImxW+V4ixNG33/ETwYxxDMzi/IfYisy7aD6bq371CHYreicuii6kLK1A8Lw1taD17+7iaojii+/S00xMeXgmcFHPKPncVTg9ZSF1/AsLvunQr/ZI/T3elRxRp0KY4p84BkNyurCjyOnW52HEQHpXDCu1dWxkXUekmU=
