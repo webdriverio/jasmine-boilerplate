@@ -7,6 +7,7 @@ describe('auth form', function () {
         FormPage.password.setValue('bar')
         FormPage.submit()
 
+        FormPage.flash.waitForVisible();
         expect(FormPage.flash.getText()).toContain('Your username is invalid!')
     })
 
