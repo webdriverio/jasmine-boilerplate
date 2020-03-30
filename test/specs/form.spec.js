@@ -7,7 +7,7 @@ describe('auth form', function () {
         FormPage.password.setValue('bar')
         FormPage.submit()
 
-        FormPage.flash.waitForVisible();
+        FormPage.flash.waitForDisplayed()
         expect(FormPage.flash.getText()).toContain('Your username is invalid!')
     })
 
@@ -17,7 +17,7 @@ describe('auth form', function () {
         FormPage.password.setValue('SuperSecretPassword!')
         FormPage.submit()
 
-        FormPage.flash.waitForVisible()
+        FormPage.flash.waitForDisplayed()
         expect(FormPage.flash.getText()).toContain('You logged into a secure area!')
     })
 })
