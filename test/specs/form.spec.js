@@ -8,7 +8,7 @@ describe('auth form', function () {
         FormPage.submit()
 
         FormPage.flash.waitForDisplayed()
-        expect(FormPage.flash.getText()).toContain('Your username is invalid!')
+        expect(FormPage.flash).toHaveTextContaining('Your username is invalid!')
     })
 
     it('should allow access with correct creds', function () {
@@ -18,6 +18,6 @@ describe('auth form', function () {
         FormPage.submit()
 
         FormPage.flash.waitForDisplayed()
-        expect(FormPage.flash.getText()).toContain('You logged into a secure area!')
+        expect(FormPage.flash).toHaveTextContaining('You logged into a secure area!')
     })
 })
