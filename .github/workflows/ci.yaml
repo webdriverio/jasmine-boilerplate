@@ -7,11 +7,11 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
         - name: Install
-          uses: ianwalter/puppeteer@3
+          uses: ianwalter/puppeteer@master
           with:
             args: npm install
         - name: Test
-          uses: ianwalter/puppeteer@3
+          uses: ianwalter/puppeteer@master
           with:
             args: npm run test:local
         - uses: actions/upload-artifact@v1
