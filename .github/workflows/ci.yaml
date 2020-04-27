@@ -4,13 +4,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install
-        uses: ianwalter/puppeteer@master
-        with:
-          args: npm install
-      - name: Test
-        uses: ianwalter/puppeteer@master
-        with:
-          args: npm run test:local
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Install
+          uses: ianwalter/puppeteer@master
+          with:
+            args: npm install
+        - name: Test
+          uses: ianwalter/puppeteer@master
+          with:
+            args: npm run test:local
+        - uses: actions/upload-artifact@v1
+          if: failure()
+          with:
+            name: logs
+            path: logs
+
