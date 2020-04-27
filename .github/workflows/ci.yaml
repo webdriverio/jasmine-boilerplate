@@ -1,0 +1,16 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        uses: ianwalter/puppeteer@master
+        with:
+          args: npm install
+      - name: Test
+        uses: ianwalter/puppeteer@master
+        with:
+          args: npm run test:local
