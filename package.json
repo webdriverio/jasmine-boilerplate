@@ -23,7 +23,8 @@
   },
   "scripts": {
     "test": "wdio wdio.sauce.conf.js",
-    "test:local": "wdio wdio.local.conf.js"
+    "test:local": "wdio wdio.local.conf.js",
+    "test:sauce": "wdio wdio.sauce.conf.js"
   },
   "dependencies": {},
   "devDependencies": {
