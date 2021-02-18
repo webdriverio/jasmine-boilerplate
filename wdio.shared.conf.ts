@@ -1,6 +1,6 @@
-const path = require('path')
+import path from 'path'
 
-exports.config = {
+export const config: WebdriverIO.Config = {
     //
     // ====================
     // Runner Configuration
@@ -106,13 +106,10 @@ exports.config = {
     reporters: ['spec'],
     //
     // Options to be passed to Jasmine.
+    // @ts-expect-error fixed in https://github.com/webdriverio/webdriverio/pull/6472
     jasmineNodeOpts: {
-        //
         // Jasmine default timeout
         defaultTimeoutInterval: 60000,
-        helpers: [
-            require.resolve('@babel/register')
-        ]
         //
         // The Jasmine framework allows interception of each assertion in order to log the state of the application
         // or website depending on the result. For example, it is pretty handy to take a screenshot every time
