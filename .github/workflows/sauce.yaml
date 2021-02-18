@@ -1,6 +1,6 @@
 name: Sauce CI
 
-on: [push, pull_request]
+on: [push, pull_request_target]
 
 env:
   SAUCE_USERNAME: ${{secrets.SAUCE_USERNAME}}
