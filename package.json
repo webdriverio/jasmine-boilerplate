@@ -22,9 +22,9 @@
     "url": "https://github.com/webdriverio/jasmine-boilerplate/issues"
   },
   "scripts": {
-    "test": "wdio wdio.sauce.conf.js",
-    "test:local": "wdio wdio.local.conf.js",
-    "test:sauce": "wdio wdio.sauce.conf.js"
+    "test": "wdio run wdio.sauce.conf.ts",
+    "test:local": "wdio run wdio.local.conf.ts",
+    "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
   "dependencies": {},
   "devDependencies": {
