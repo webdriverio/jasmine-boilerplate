@@ -26,9 +26,6 @@
     "test:local": "wdio run wdio.local.conf.ts",
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
-  "dependencies": {
-    "expect-webdriverio": "^4.0.0"
-  },
   "devDependencies": {
     "@wdio/cli": "^7.2.3",
     "@wdio/jasmine-framework": "^7.2.3",
