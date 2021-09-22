@@ -6,6 +6,9 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 16.3.0
         - name: Install
           uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
           with:
