@@ -6,14 +6,13 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v2
+        - uses: actions/setup-node@v1
+          with:
+            node-version: 16.3.0
         - name: Install
-          uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
-          with:
-            args: npm install
+          run: npm install
         - name: Test
-          uses: ianwalter/puppeteer-container@afefc4bee7341a77baa94503da684e2895ea5d30
-          with:
-            args: npm run test:local
+          run: npm run test:local
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
