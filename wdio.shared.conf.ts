@@ -1,9 +1,5 @@
-import url from 'node:url'
-import path from 'node:path'
+import * as path from 'node:path'
 
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
-
-// @ts-expect-error
 export const config: WebdriverIO.Config = {
     //
     // ====================
@@ -90,6 +86,9 @@ export const config: WebdriverIO.Config = {
     // Default request retries count
     connectionRetryCount: 3,
     //
+    // will be overwritten in other config files
+    capabilities: [],
+    //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
@@ -110,7 +109,7 @@ export const config: WebdriverIO.Config = {
     reporters: ['spec'],
     //
     // Options to be passed to Jasmine.
-    jasmineNodeOpts: {
+    jasmineOpts: {
         // Jasmine default timeout
         defaultTimeoutInterval: 60000,
         //

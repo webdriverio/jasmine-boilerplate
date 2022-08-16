@@ -1,4 +1,4 @@
-import CheckboxPage from '../pageobjects/checkbox.page.js'
+import CheckboxPage from '../pageobjects/checkbox.page'
 
 describe('checkboxes', () => {
     it('checkbox 2 should be enabled', async () => {

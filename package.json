@@ -5,7 +5,7 @@
   "description": "Boilerplate project to run WebdriverIO tests with Jasmine",
   "license": "MIT",
   "homepage": "https://github.com/webdriverio/jasmine-boilerplate#readme",
-  "type": "module",
+  "type": "commonjs",
   "keywords": [
     "webdriver",
     "webdriverio",
