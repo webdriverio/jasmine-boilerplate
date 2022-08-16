@@ -1,4 +1,4 @@
-import DynamicPage from '../pageobjects/dynamic.page'
+import DynamicPage from '../pageobjects/dynamic.page.js'
 
 describe('dynamic loading', function () {
     it('should be an button on the page', async () => {
