@@ -1,5 +1,6 @@
-import { config as sharedConfig } from './wdio.shared.conf'
+import { config as sharedConfig } from './wdio.shared.conf.js'
 
+// @ts-expect-error
 export const config: WebdriverIO.Config = {
     ...sharedConfig,
     ...{

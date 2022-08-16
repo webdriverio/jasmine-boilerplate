@@ -1,5 +1,9 @@
-import path from 'path'
+import url from 'node:url'
+import path from 'node:path'
 
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
+
+// @ts-expect-error
 export const config: WebdriverIO.Config = {
     //
     // ====================
@@ -106,7 +110,6 @@ export const config: WebdriverIO.Config = {
     reporters: ['spec'],
     //
     // Options to be passed to Jasmine.
-    // @ts-expect-error fixed in https://github.com/webdriverio/webdriverio/pull/6472
     jasmineNodeOpts: {
         // Jasmine default timeout
         defaultTimeoutInterval: 60000,
