@@ -3,8 +3,7 @@ import path from 'node:path'
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
-// @ts-expect-error
-export const config: WebdriverIO.Config = {
+export const config: Omit<WebdriverIO.Config, 'capabilities'> = {
     //
     // ====================
     // Runner Configuration
