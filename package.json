@@ -27,7 +27,7 @@
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
   "devDependencies": {
-    "@types/jasmine": "^4.3.5",
+    "@types/jasmine": "^5.1.0",
     "@wdio/cli": "^8.14.6",
     "@wdio/globals": "^8.14.6",
     "@wdio/jasmine-framework": "^8.14.6",
