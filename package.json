@@ -40,6 +40,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.4.0",
     "typescript": "^5.5.4",
-    "webdriverio": "9.0.4"
+    "webdriverio": "9.0.7"
   }
 }
