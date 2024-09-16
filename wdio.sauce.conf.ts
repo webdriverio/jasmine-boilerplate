@@ -8,10 +8,10 @@ export const config: WebdriverIO.Config = {
         region: 'us',
         services: ['sauce'],
         capabilities: [{
-            maxInstances: 5,
             browserName: 'firefox',
             browserVersion: 'latest',
             platformName: 'Windows 10',
+            'wdio:maxInstances': 5,
             'sauce:options': {
                 build: `Build ${Math.ceil(Date.now() / 1000)}`
             }
