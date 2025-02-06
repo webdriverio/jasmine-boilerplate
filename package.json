@@ -22,21 +22,22 @@
     "url": "https://github.com/webdriverio/jasmine-boilerplate/issues"
   },
   "scripts": {
+    "lint": "eslint .",
     "test": "wdio run wdio.sauce.conf.ts",
     "test:local": "wdio run wdio.local.conf.ts",
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
   "devDependencies": {
-    "@types/jasmine": "^5.1.4",
-    "@wdio/cli": "9.7.2",
-    "@wdio/globals": "9.7.2",
-    "@wdio/jasmine-framework": "9.7.2",
-    "@wdio/local-runner": "9.7.2",
-    "@wdio/sauce-service": "9.7.2",
+    "@wdio/eslint": "^0.0.5",
+    "@types/jasmine": "^5.1.5",
+    "@wdio/cli": "9.7.3",
+    "@wdio/globals": "9.7.3",
+    "@wdio/jasmine-framework": "9.7.3",
+    "@wdio/local-runner": "9.7.3",
+    "@wdio/sauce-service": "9.7.3",
     "@wdio/spec-reporter": "9.6.3",
-    "eslint": "^8.56.0",
-    "eslint-config-standard": "^17.1.0",
-    "typescript": "^5.6.2",
-    "webdriverio": "9.7.2"
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "webdriverio": "9.7.3"
   }
 }

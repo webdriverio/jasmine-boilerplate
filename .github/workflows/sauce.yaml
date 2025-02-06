@@ -13,16 +13,22 @@ jobs:
     if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
+        - name: ⬇️ Checkout Code
           uses: actions/checkout@v4
-        - uses: actions/setup-node@v4
+
+        - name: 🐢 Setup Node
+          uses: actions/setup-node@v4
           with:
-            node-version: 18
-        - name: Install Dependencies
+            node-version-file: '.nvmrc'
+
+        - name: 🏗️ Install Dependencies
           run: npm install
-        - name: Test
+
+        - name: 🧪 Test
           run: npm run test:sauce
-        - uses: actions/upload-artifact@v4
+
+        - name: 📦 Upload Logs
+          uses: actions/upload-artifact@v4
           if: failure()
           with:
             name: logs
