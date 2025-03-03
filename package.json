@@ -35,7 +35,7 @@
     "@wdio/jasmine-framework": "9.10.0",
     "@wdio/local-runner": "9.10.0",
     "@wdio/sauce-service": "9.10.0",
-    "@wdio/spec-reporter": "9.9.0",
+    "@wdio/spec-reporter": "9.10.1",
     "eslint": "^9.19.0",
     "typescript": "^5.7.3",
     "webdriverio": "9.10.0"
