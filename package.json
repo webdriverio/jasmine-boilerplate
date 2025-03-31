@@ -28,7 +28,7 @@
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
   "devDependencies": {
-    "@wdio/eslint": "^0.0.5",
+    "@wdio/eslint": "^0.1.0",
     "@types/jasmine": "^5.1.5",
     "@wdio/cli": "9.12.1",
     "@wdio/globals": "9.12.1",
