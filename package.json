@@ -28,16 +28,17 @@
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
   "devDependencies": {
-    "@wdio/eslint": "^0.1.0",
-    "@types/jasmine": "^5.1.5",
+    "@wdio/eslint": "^0.1.1",
+    "@types/jasmine": "^5.1.8",
     "@wdio/cli": "9.15.0",
     "@wdio/globals": "9.15.0",
-    "@wdio/jasmine-framework": "9.14.0",
+    "@wdio/jasmine-framework": "9.15.0",
     "@wdio/local-runner": "9.15.0",
     "@wdio/sauce-service": "9.15.0",
-    "@wdio/spec-reporter": "9.14.0",
-    "eslint": "^9.19.0",
-    "typescript": "^5.7.3",
+    "@wdio/spec-reporter": "9.15.0",
+    "eslint": "^9.28.0",
+    "typescript": "^5.8.3",
     "webdriverio": "9.15.0"
-  }
+  },
+  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912"
 }
