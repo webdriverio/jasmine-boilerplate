@@ -38,7 +38,7 @@
     "@wdio/spec-reporter": "9.16.2",
     "eslint": "^9.29.0",
     "typescript": "^5.8.3",
-    "webdriverio": "9.16.2"
+    "webdriverio": "9.17.0"
   },
   "packageManager": "pnpm@10.12.2"
 }
