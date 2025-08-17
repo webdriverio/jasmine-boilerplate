@@ -23,7 +23,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run tsc && npm run eslint && npm run test:local",
+    "test": "npm run tsc && npm run lint && npm run test:local",
     "tsc": "tsc --noEmit",
     "test:local": "wdio run wdio.local.conf.ts",
     "test:sauce": "wdio run wdio.sauce.conf.ts"
