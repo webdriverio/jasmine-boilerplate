@@ -23,14 +23,15 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "wdio run wdio.sauce.conf.ts",
+    "test": "npm run tsc && npm run eslint && npm run test:local",
+    "tsc": "tsc --noEmit",
     "test:local": "wdio run wdio.local.conf.ts",
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
   "devDependencies": {
-    "@wdio/eslint": "^0.1.1",
-    "@types/jasmine": "^5.1.8",
+    "@types/jasmine": "^5.1.9",
     "@wdio/cli": "9.19.2",
+    "@wdio/eslint": "^0.1.1",
     "@wdio/globals": "9.17.0",
     "@wdio/jasmine-framework": "9.19.2",
     "@wdio/local-runner": "9.19.0",
@@ -40,5 +41,4 @@
     "typescript": "^5.8.3",
     "webdriverio": "9.19.2"
   },
-  "packageManager": "pnpm@10.12.2"
 }
