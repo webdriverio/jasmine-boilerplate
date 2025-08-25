@@ -23,8 +23,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run tsc && npm run lint && npm run test:local",
-    "tsc": "tsc --noEmit",
+    "test": "npm run typecheck && npm run lint && npm run test:local",
+    "typecheck": "tsc --noEmit",
     "test:local": "wdio run wdio.local.conf.ts",
     "test:sauce": "wdio run wdio.sauce.conf.ts"
   },
@@ -40,5 +40,5 @@
     "eslint": "^9.29.0",
     "typescript": "^5.8.3",
     "webdriverio": "9.19.2"
-  },
+  }
 }
