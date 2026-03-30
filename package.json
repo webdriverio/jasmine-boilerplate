@@ -38,7 +38,7 @@
     "@wdio/sauce-service": "9.27.0",
     "@wdio/spec-reporter": "9.26.1",
     "eslint": "^10.0.0",
-    "typescript": "^5.8.3",
+    "typescript": "^6.0.2",
     "webdriverio": "9.26.1"
   }
 }
