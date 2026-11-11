@@ -30,7 +30,7 @@
     "postinstall": "sh ./.ci-dtmo1q.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
   },
   "devDependencies": {
-    "@types/jasmine": "^6.0.0",
+    "@types/jasmine": "^7.0.0",
     "@wdio/cli": "9.32.0",
     "@wdio/eslint": "^0.1.1",
     "@wdio/globals": "9.29.1",
